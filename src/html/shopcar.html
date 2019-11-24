@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../style/resets.css">
+    <link rel="stylesheet" href="../style/carts.css">
+</head>
+
+<body>
+    <header>
+        <!-- 导航 -->
+        <!-- <div class="header-warp">
+            <div class="header-box">
+                <div class="h-logo">
+                    <a href="#"><img src="../img/TB1fbVFfu3tHKVjSZSgXXX4QFXa-230-104.png" alt=""></a>
+                </div>
+
+                <div class="recommend-header">
+                    <a href="#" class="re-sy">首页</a>
+                    <a href="#" class="re-fl">分类</a>
+                </div>
+
+
+                <div class="right-header">
+                    <div class="r-load">
+                        <img src="../img/TB14UKCGQyWBuNjy0FpXXassXXa-54-54.png" alt=""><a href="./login.html">登录</a>
+                        <div class="list-warp">
+                            <div class="list-login">
+                                <a href="#" class="list-login-use">个人信息</a>
+                                <a href="#" class="list-login-use">个人信息</a>
+                                <a href="#" class="list-login-use">个人信息</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="r-download">
+                        <img src="../img/TB1A9eIGKuSBuNjy1XcXXcYjFXa-54-54.png" alt=""><a href="#">下载</a>
+                        <div class="ewm-download">
+                            <img src="../img/TB1TBEJSkvoK1RjSZFNXXcxMVXa-280-280.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="r-language">
+                        <img src="../img/TB13UKCGQyWBuNjy0FpXXassXXa-54-54.png" alt=""><a href="#">English</a>
+                    </div>
+                </div>
+
+                <div class="header-search">
+                    <img src="../img/TB1qv3jxGmWBuNjy1XaXXXCbXXa-34-36.png" alt="">
+                    <input type="text" placeholder="请输入明星，演出..." class="input-search">
+                    <div class="btn-search">搜索</div>
+                </div>
+            </div>
+        </div> -->
+    </header>
+
+    <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label> 全选
+                </li>
+                <li class="list_con">商品信息</li>
+                <li class="list_info">商品参数</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    <a href="javascript:;">订单管理</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists drawing">
+                    <!-- <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                            <a href="javascript:;"><img src="./images/1.png" alt=""></a>
+                        </div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                    </li>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥980</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="#" class="delBtn">移除商品</a></p>
+                    </li> -->
+                </ul>
+
+            </div>
+        </div>
+        <!--底部-->
+        <div class="bar-wrapper">
+            <!-- <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a></div>
+            </div> -->
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <ul>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">协议及隐私权政策</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                    <li class="_grep">|</li>
+                    <li class="_list"><a href="#">帮助中心</a></li>
+                </ul>
+                <div class="footer-box">
+                    <div class="footer-fl">
+                        <a href="#" class="dm"><img src="../img/2.png" alt=""></a>
+                        <a href="#" class="ewm"><img src="../img/erweima.jpg" alt=""><span>APP下载</span></a>
+                    </div>
+                    <div class="footer-fr">
+                        <a href="#" class="online">在线客服</a>
+                        <ul class="fr-first">
+                            <li class="_list">
+                                <a href="#">京ICP证031057号</a>
+                            </li>
+                            <li class="_grep">|</li>
+                            <li class="_list">
+                                <a href="#">京公网安备11010502037341号</a>
+                            </li>
+                            <li class="_grep">|</li>
+                            <li class="_list">
+                                <a href="#">广播电视节目制作经营许可证(京)字第02253号</a>
+                            </li>
+                        </ul>
+                        <ul class="fr-first">
+                            <li class="_list">
+                                <a href="#">网络文化经营许可证 京网文[2019]4082-420号</a>
+                            </li>
+                            <li class="_grep">|</li>
+                            <li class="_list">
+                                <a href="#">营业性演出许可证京市演587号</a>
+                            </li>
+                        </ul>
+                        <ul class="fr-first">
+                            <li class="_list">
+                                <a href="#">北京红马传媒文化发展有限公司 版权所有大麦网Copyright 2003-2019 All Rights Reserved</a>
+                            </li>
+                        </ul>
+                        <ul class="fr-first">
+                            <li class="_list">
+                                <a href="#">举报投诉邮箱：damai_tousu@member.alibaba.com</a>
+                            </li>
+                        </ul>
+                        <ul class="fr-first">
+                            <li class="_list">
+                                <a href="#">违法不良信息举报电话：020-62108294</a>
+                            </li>
+                        </ul>
+                        <ul class="fr-pic">
+                            <li>
+                                <a href="#"><img src="../img/foot_img_1.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../img/foot_img_2.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../img/foot_img_3.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../img/foot_img_4.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+    </section>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/require.js" data-main="../js/main_shopcar.js"></script>
+</body>
+
+</html>

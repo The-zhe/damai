@@ -1054,14 +1054,21 @@ img {
     background-color: #d6d6d6
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .active {
+.perform .order .perform__order__select .select_right .select_right_list .active1 {
     border-color: #ffeaf1;
     color: #ff1268;
     background: #ffeaf1;
     outline-color: #ffeaf1
 }
 
-.perform .order .perform__order__select .select_right .select_right_list .active .inner {
+.active {
+    border-color: #ffeaf1;
+    color: #ff1268;
+    background: #ffeaf1;
+    outline-color: #ffeaf1;
+}
+
+.perform .order .perform__order__select .select_right .select_right_list .active1 .inner {
     border: 1px solid #ff1268;
     padding: 0 20px
 }
@@ -5618,7 +5625,6 @@ img {
 .totol__price i {
     position: relative;
     left: 3px;
-    font-size: 16px;
     font-style: normal
 }
 

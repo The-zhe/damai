@@ -1,6 +1,6 @@
 let baseUrl = 'http://localhost:8080/damai';
 
-define(['jquery'], function($) {
+define(['jquery', 'md5'], function($, md5) {
 
     return {
         get: function(selector) {
@@ -10,7 +10,7 @@ define(['jquery'], function($) {
                     url: baseUrl + '/lib/check.php',
                     data: {
                         phone: $('#reg_mobile').val(),
-                        password: $('#reg_password').val()
+                        password: $.md5($('#reg_password').val())
                     },
                     dataType: "json",
                     success: function(response) {

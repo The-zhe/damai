@@ -31,9 +31,9 @@ define(['jquery'], function($) {
                         var pic = value.pro_path;
 
                         con += `
-                        <a href="#" class="box-right_item">
+                        <a href="../html/product.html" class="box-right_item">
                         <div class="item_pic">
-                            <img src="../img/${pic}" alt="">
+                            <img src="../img/${pic}" alt="" class="lazy">
                         </div>
                         <div class="item_text">
                             <div class="item_title">${title}</div>
@@ -46,8 +46,8 @@ define(['jquery'], function($) {
                     </a>
 
                         `
-                        box = `
-                        <img src="../img/${pic}" alt="">
+                        box += `
+                        <img src="../img/${pic}" alt="" class="lazy">
                         <div class="box-left">
                             <div class="title">${title} </div>
                             <div class="details">${price}<span>起</span></div>
@@ -56,6 +56,9 @@ define(['jquery'], function($) {
                         $('.box-right').html(con);
                         $('.b_bpic').html(box);
                     });
+                    $(function() {
+                        $('img.lazy').lazyload({ effect: "fadeIn" });
+                    })
                 },
                 error: function(xhr, err) {
                     return err;

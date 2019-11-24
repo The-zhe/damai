@@ -2,8 +2,11 @@ require.config({
     paths: {
         jquery: "./jquery.min",
         index: "./lib/dm_home",
+        lazeload: "./jquery.lazyload.min"
     },
-    shim: {}
+    shim: {
+        lazyload: ['jquery']
+    }
 });
 
 require(['jquery', 'index'], function($, index) {

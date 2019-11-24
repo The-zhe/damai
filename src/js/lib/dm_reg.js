@@ -1,10 +1,12 @@
 let baseUrl = 'http://localhost:8080/damai';
 
 
-define(['jquery'], function($) {
+define(['jquery', 'md5'], function($, md5) {
     return {
         get: function(selector) {
+
             $(selector).on('click', function() {
+                console.log($.md5($('#reg_password').val()));
                 if (password_Boolean && varconfirm_Boolean && Mobile_Boolean && Validation_Boolean == true) {
                     $.ajax({
                         type: 'get',
@@ -12,7 +14,7 @@ define(['jquery'], function($) {
                         dataType: "json",
                         data: {
                             phone: $('#reg_mobile').val(),
-                            password: $('#reg_password').val()
+                            password: $.md5($('#reg_password').val()),
                         },
                         success: function(response) {
                             if (response.msg == 1) {
